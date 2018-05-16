@@ -1,0 +1,15 @@
+<style>
+  .pictureContainer {
+  height: 200px;
+  }
+</style>
+{% load static %}
+{% for row in pictures.medium %}
+<div class="pictureContainer">
+{% for pic in row %}
+  <img src="{% static 'gallery/example.jpg' %}"
+       style="max-height:100%"
+       alt="Gallery 1"/>
+{% endfor %}
+<div>
+{% endfor %}
